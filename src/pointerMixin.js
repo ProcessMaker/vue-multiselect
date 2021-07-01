@@ -36,7 +36,7 @@ export default {
       this.pointerDirty = false
     },
     pointer () {
-      this.$refs.search && this.$refs.search.setAttribute('aria-activedescendant', this.id + '-' + this.pointer.toString())
+      this.$refs.search && this.$refs.search.setAttribute('aria-activedescendant', 'option-' + this.uuid + '-' + this.pointer.toString())
     }
   },
   methods: {
@@ -69,7 +69,6 @@ export default {
       if (this.filteredOptions.length > 0) {
         this.select(this.filteredOptions[this.pointer], key)
       }
-      this.pointerReset()
     },
     pointerForward () {
       /* istanbul ignore else */

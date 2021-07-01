@@ -61,6 +61,8 @@ function filterGroups (search, label, values, groupLabel, customLabel) {
 
 const flow = (...fns) => x => fns.reduce((v, f) => f(v), x)
 
+let uuid = 0;
+
 export default {
   data () {
     return {
@@ -329,6 +331,11 @@ export default {
     ) {
       this.select(this.filteredOptions[0])
     }
+    this.pointer = this.selectedIndex();
+  },
+  beforeCreate() {
+    this.uuid = uuid.toString();
+    uuid += 1;
   },
   computed: {
     internalValue () {
@@ -460,6 +467,14 @@ export default {
         ? option[this.trackBy]
         : option
       return this.valueKeys.indexOf(opt) > -1
+    },
+    selectedIndex()
+    {
+      const index = this.options.indexOf(this.valueKeys[0]);
+      if (index === -1) {
+        return 0;
+      }
+      return index;
     },
     /**
      * Finds out if the given option is disabled

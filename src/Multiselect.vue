@@ -10,7 +10,10 @@
     @keyup.esc="deactivate()"
     class="multiselect"
     role="combobox"
-    :aria-owns="'listbox-'+id">
+    :aria-expanded="isOpen ? 'true' : 'false'"
+    :aria-owns="'listbox-'+uuid"
+    aria-haspopup="listbox"
+    >
       <slot name="caret" :toggle="toggle">
         <div @mousedown.prevent.stop="toggle()" class="multiselect__select"></div>
       </slot>
@@ -53,6 +56,8 @@
           autocomplete="off"
           spellcheck="false"
           :placeholder="placeholder"
+          :aria-placeholder="placeholder"
+          aria-autocomplete="list"
           :style="inputStyle"
           :value="search"
           :disabled="disabled"
@@ -66,7 +71,7 @@
           @keypress.enter.prevent.stop.self="addPointerElement($event)"
           @keydown.delete.stop="removeLastElement()"
           class="multiselect__input"
-          :aria-controls="'listbox-'+id"
+          :aria-controls="'listbox-'+uuid"
         />
         <span
           v-if="isSingleLabelVisible"
@@ -97,7 +102,7 @@
           :style="{ maxHeight: optimizedHeight + 'px' }"
           ref="list"
         >
-          <ul class="multiselect__content" :style="contentStyle" role="listbox" :id="'listbox-'+id">
+          <ul class="multiselect__content" :style="contentStyle" role="listbox" :id="'listbox-'+uuid">
             <slot name="beforeList"></slot>
             <li v-if="multiple && max === internalValue.length">
               <span class="multiselect__option">
@@ -108,8 +113,11 @@
               <li class="multiselect__element"
                 v-for="(option, index) of filteredOptions"
                 :key="index"
-                v-bind:id="id + '-' + index"
-                v-bind:role="!(option && (option.$isLabel || option.$isDisabled)) ? 'option' : null">
+                v-bind:id="'option-' + uuid+ '-' + index"
+                v-bind:role="!(option && (option.$isLabel || option.$isDisabled)) ? 'option' : null"
+                :aria-selected="isSelected(option) ? 'true' : 'false'"
+                :aria-label="getOptionLabel(option) + '. ' + (isSelected(option) ? deselectLabelText : selectLabelText)"
+                >
                 <span
                   v-if="!(option && (option.$isLabel || option.$isDisabled))"
                   :class="optionHighlight(index, option)"

@@ -1,5 +1,5 @@
 {
-  "name": "vue-multiselect",
+  "name": "@processmaker/vue-multiselect",
   "version": "2.1.6",
   "private": false,
   "types": "index.d.ts",
