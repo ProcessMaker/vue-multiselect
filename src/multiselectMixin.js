@@ -331,7 +331,7 @@ export default {
     ) {
       this.select(this.filteredOptions[0])
     }
-    this.pointer = this.selectedIndex()
+    this.pointer = this.initialPointer()
   },
   beforeCreate () {
     this.uuid = uuid.toString()
@@ -468,8 +468,12 @@ export default {
         : option
       return this.valueKeys.indexOf(opt) > -1
     },
-    selectedIndex () {
-      const index = this.options.indexOf(this.valueKeys[0])
+    /**
+     * When mounted, pick the first item and set the pointer to it
+     * @returns {Integer}
+     */
+    initialPointer () {
+      const index = this.options.findIndex(o => o === this.internalValue[0])
       if (index === -1) {
         return 0
       }
