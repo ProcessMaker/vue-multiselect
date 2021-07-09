@@ -1,11 +1,11 @@
 {
-  "name": "vue-multiselect",
-  "version": "2.1.6",
+  "name": "@processmaker/vue-multiselect",
+  "version": "2.1.7-alpha.1.0",
   "private": false,
   "types": "index.d.ts",
   "scripts": {
     "test": "vue-cli-service test:unit",
-    "lint": "eslint --ext .js,.vue src tests/unit/specs",
+    "lint": "eslint --ext .js,.vue src tests/unit",
     "dev": "node build/dev-server.js",
     "bundle:dist": "rm -rf dist && webpack --config build/webpack.bundle.conf.js",
     "bundle": "node build/bundle.js",
