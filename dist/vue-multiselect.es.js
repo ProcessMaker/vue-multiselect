@@ -1,16 +1,17 @@
+(function(){"use strict";try{if(typeof document!="undefined"){var t=document.createElement("style");t.appendChild(document.createTextNode('fieldset[disabled] .multiselect{pointer-events:none}.multiselect__spinner{position:absolute;right:1px;top:1px;width:48px;height:35px;background:#fff;display:block}.multiselect__spinner:before,.multiselect__spinner:after{position:absolute;content:"";top:50%;left:50%;margin:-8px 0 0 -8px;width:16px;height:16px;border-radius:100%;border-color:#41b883 transparent transparent;border-style:solid;border-width:2px;box-shadow:0 0 0 1px transparent}.multiselect__spinner:before{animation:spinning 2.4s cubic-bezier(.41,.26,.2,.62);animation-iteration-count:infinite}.multiselect__spinner:after{animation:spinning 2.4s cubic-bezier(.51,.09,.21,.8);animation-iteration-count:infinite}.multiselect__loading-enter-active,.multiselect__loading-leave-active{transition:opacity .4s ease-in-out;opacity:1}.multiselect__loading-enter,.multiselect__loading-leave-active{opacity:0}.multiselect,.multiselect__input,.multiselect__single{font-family:inherit;font-size:16px;touch-action:manipulation}.multiselect{box-sizing:content-box;display:block;position:relative;width:100%;min-height:40px;text-align:left;color:#35495e}.multiselect *{box-sizing:border-box}.multiselect:focus{outline:none}.multiselect--disabled{background:#ededed;pointer-events:none;opacity:.6}.multiselect--active{z-index:50}.multiselect--active:not(.multiselect--above) .multiselect__current,.multiselect--active:not(.multiselect--above) .multiselect__input,.multiselect--active:not(.multiselect--above) .multiselect__tags{border-bottom-left-radius:0;border-bottom-right-radius:0}.multiselect--active .multiselect__select{transform:rotate(180deg)}.multiselect--above.multiselect--active .multiselect__current,.multiselect--above.multiselect--active .multiselect__input,.multiselect--above.multiselect--active .multiselect__tags{border-top-left-radius:0;border-top-right-radius:0}.multiselect__input,.multiselect__single{position:relative;display:inline-block;min-height:20px;line-height:20px;border:none;border-radius:5px;background:#fff;padding:0 0 0 5px;width:100%;transition:border .1s ease;box-sizing:border-box;margin-bottom:8px;vertical-align:top}.multiselect__input::placeholder{color:#35495e}.multiselect__tag~.multiselect__input,.multiselect__tag~.multiselect__single{width:auto}.multiselect__input:hover,.multiselect__single:hover{border-color:#cfcfcf}.multiselect__input:focus,.multiselect__single:focus{border-color:#a8a8a8;outline:none}.multiselect__single{padding-left:5px;margin-bottom:8px}.multiselect__tags-wrap{display:inline}.multiselect__tags{min-height:40px;display:block;padding:8px 40px 0 8px;border-radius:5px;border:1px solid #e8e8e8;background:#fff;font-size:14px}.multiselect__tag{position:relative;display:inline-block;padding:4px 26px 4px 10px;border-radius:5px;margin-right:10px;color:#fff;line-height:1;background:#41b883;margin-bottom:5px;white-space:nowrap;overflow:hidden;max-width:100%;text-overflow:ellipsis}.multiselect__tag-icon{cursor:pointer;margin-left:7px;position:absolute;right:0;top:0;bottom:0;font-weight:700;font-style:initial;width:22px;text-align:center;line-height:22px;transition:all .2s ease;border-radius:5px}.multiselect__tag-icon:after{content:"\\d7";color:#266d4d;font-size:14px}.multiselect__tag-icon:focus,.multiselect__tag-icon:hover{background:#369a6e}.multiselect__tag-icon:focus:after,.multiselect__tag-icon:hover:after{color:#fff}.multiselect__current{line-height:16px;min-height:40px;box-sizing:border-box;display:block;overflow:hidden;padding:8px 30px 0 12px;white-space:nowrap;margin:0;text-decoration:none;border-radius:5px;border:1px solid #e8e8e8;cursor:pointer}.multiselect__select{line-height:16px;display:block;position:absolute;box-sizing:border-box;width:40px;height:38px;right:1px;top:1px;padding:4px 8px;margin:0;text-decoration:none;text-align:center;cursor:pointer;transition:transform .2s ease}.multiselect__select:before{position:relative;right:0;top:65%;color:#999;margin-top:4px;border-style:solid;border-width:5px 5px 0 5px;border-color:#999999 transparent transparent transparent;content:""}.multiselect__placeholder{color:#adadad;display:inline-block;margin-bottom:10px;padding-top:2px}.multiselect--active .multiselect__placeholder{display:none}.multiselect__content-wrapper{position:absolute;display:block;background:#fff;width:100%;max-height:240px;overflow:auto;border:1px solid #e8e8e8;border-top:none;border-bottom-left-radius:5px;border-bottom-right-radius:5px;z-index:50;-webkit-overflow-scrolling:touch}.multiselect__content{list-style:none;display:inline-block;padding:0;margin:0;min-width:100%;vertical-align:top}.multiselect--above .multiselect__content-wrapper{bottom:100%;border-radius:5px 5px 0 0;border-bottom:none;border-top:1px solid #e8e8e8}.multiselect__content::webkit-scrollbar{display:none}.multiselect__element{display:block}.multiselect__option{display:block;padding:12px;min-height:40px;line-height:16px;text-decoration:none;text-transform:none;vertical-align:middle;position:relative;cursor:pointer;white-space:nowrap}.multiselect__option:after{top:0;right:0;position:absolute;line-height:40px;padding-right:12px;padding-left:20px;font-size:13px}.multiselect__option--highlight{background:#41b883;outline:none;color:#fff}.multiselect__option--highlight:after{content:attr(data-select);background:#41b883;color:#fff}.multiselect__option--selected{background:#f3f3f3;color:#35495e;font-weight:700}.multiselect__option--selected:after{content:attr(data-selected);color:silver}.multiselect__option--selected.multiselect__option--highlight{background:#ff6a6a;color:#fff}.multiselect__option--selected.multiselect__option--highlight:after{background:#ff6a6a;content:attr(data-deselect);color:#fff}.multiselect--disabled .multiselect__current,.multiselect--disabled .multiselect__select{background:#ededed;color:#a6a6a6}.multiselect__option--disabled{background:#ededed!important;color:#a6a6a6!important;cursor:text;pointer-events:none}.multiselect__option--group{background:#ededed;color:#35495e}.multiselect__option--group.multiselect__option--highlight{background:#35495e;color:#fff}.multiselect__option--group.multiselect__option--highlight:after{background:#35495e}.multiselect__option--disabled.multiselect__option--highlight{background:#dedede}.multiselect__option--group-selected.multiselect__option--highlight{background:#ff6a6a;color:#fff}.multiselect__option--group-selected.multiselect__option--highlight:after{background:#ff6a6a;content:attr(data-deselect);color:#fff}.multiselect-enter-active,.multiselect-leave-active{transition:all .15s ease}.multiselect-enter,.multiselect-leave-active{opacity:0}.multiselect__strong{margin-bottom:8px;line-height:20px;display:inline-block;vertical-align:top}*[dir=rtl] .multiselect{text-align:right}*[dir=rtl] .multiselect__select{right:auto;left:1px}*[dir=rtl] .multiselect__tags{padding:8px 8px 0 40px}*[dir=rtl] .multiselect__content{text-align:right}*[dir=rtl] .multiselect__option:after{right:auto;left:0}*[dir=rtl] .multiselect__clear{right:auto;left:12px}*[dir=rtl] .multiselect__spinner{right:auto;left:1px}@keyframes spinning{0%{transform:rotate(0)}to{transform:rotate(2turn)}}')),document.head.appendChild(t)}}catch(e){console.error("vite-plugin-css-injected-by-js",e)}})();
 function V(t) {
   return t === 0 ? !1 : Array.isArray(t) && t.length === 0 ? !0 : !t;
 }
-function Oe(t) {
+function Se(t) {
   return (...e) => !t(...e);
 }
-function we(t, e) {
+function Ee(t, e) {
   return t === void 0 && (t = "undefined"), t === null && (t = "null"), t === !1 && (t = "false"), t.toString().toLowerCase().indexOf(e.trim()) !== -1;
 }
-function he(t, e, i, n) {
-  return t.filter((r) => we(n(r, i), e));
+function pe(t, e, i, n) {
+  return t.filter((r) => Ee(n(r, i), e));
 }
-function Se(t) {
+function Le(t) {
   return t.filter((e) => !e.$isLabel);
 }
 function D(t, e) {
@@ -19,20 +20,20 @@ function D(t, e) {
     $isLabel: !0
   }), n.concat(r[t])) : n, []);
 }
-function Ee(t, e, i, n, r) {
+function ke(t, e, i, n, r) {
   return (s) => s.map((a) => {
     if (!a[i])
       return console.warn("Options passed to vue-multiselect do not contain groups, despite the config."), [];
-    const l = he(a[i], t, e, r);
+    const l = pe(a[i], t, e, r);
     return l.length ? {
       [n]: a[n],
       [i]: l
     } : [];
   });
 }
-const X = (...t) => (e) => t.reduce((i, n) => n(i), e);
-let K = 0;
-const Le = {
+const K = (...t) => (e) => t.reduce((i, n) => n(i), e);
+let Z = 0;
+const Te = {
   data() {
     return {
       search: "",
@@ -291,7 +292,7 @@ const Le = {
     !this.multiple && this.max && console.warn("[Vue-Multiselect warn]: Max prop should not be used when prop Multiple equals false."), this.preselectFirst && !this.internalValue.length && this.options.length && this.select(this.filteredOptions[0]), this.pointer = this.initialPointer();
   },
   beforeCreate() {
-    this.uuid = K.toString(), K += 1;
+    this.uuid = Z.toString(), Z += 1;
   },
   computed: {
     internalValue() {
@@ -300,7 +301,7 @@ const Le = {
     filteredOptions() {
       const t = this.search || "", e = t.toLowerCase().trim();
       let i = this.options.concat();
-      return this.internalSearch ? i = this.groupValues ? this.filterAndFlat(i, e, this.label) : he(i, e, this.label, this.customLabel) : i = this.groupValues ? D(this.groupValues, this.groupLabel)(i) : i, i = this.hideSelected ? i.filter(Oe(this.isSelected)) : i, this.taggable && e.length && !this.isExistingOption(e) && (this.tagPosition === "bottom" ? i.push({ isTag: !0, label: t }) : i.unshift({ isTag: !0, label: t })), i.slice(0, this.optionsLimit);
+      return this.internalSearch ? i = this.groupValues ? this.filterAndFlat(i, e, this.label) : pe(i, e, this.label, this.customLabel) : i = this.groupValues ? D(this.groupValues, this.groupLabel)(i) : i, i = this.hideSelected ? i.filter(Se(this.isSelected)) : i, this.taggable && e.length && !this.isExistingOption(e) && (this.tagPosition === "bottom" ? i.push({ isTag: !0, label: t }) : i.unshift({ isTag: !0, label: t })), i.slice(0, this.optionsLimit);
     },
     valueKeys() {
       return this.trackBy ? this.internalValue.map((t) => t[this.trackBy]) : this.internalValue;
@@ -334,8 +335,8 @@ const Le = {
      * @returns {Array} returns a filtered and flat options list
      */
     filterAndFlat(t, e, i) {
-      return X(
-        Ee(e, i, this.groupValues, this.groupLabel, this.customLabel),
+      return K(
+        ke(e, i, this.groupValues, this.groupLabel, this.customLabel),
         D(this.groupValues, this.groupLabel)
       )(t);
     },
@@ -345,9 +346,9 @@ const Le = {
      * @returns {Array} returns a flat options list without group labels
      */
     flatAndStrip(t) {
-      return X(
+      return K(
         D(this.groupValues, this.groupLabel),
-        Se
+        Le
       )(t);
     },
     /**
@@ -549,7 +550,7 @@ const Le = {
       e > this.maxHeight || e > t || this.openDirection === "below" || this.openDirection === "bottom" ? (this.preferredOpenDirection = "below", this.optimizedHeight = Math.min(e - 40, this.maxHeight)) : (this.preferredOpenDirection = "above", this.optimizedHeight = Math.min(t - 40, this.maxHeight));
     }
   }
-}, ke = {
+}, Ve = {
   data() {
     return {
       pointer: 0,
@@ -630,10 +631,10 @@ const Le = {
     }
   }
 };
-var H = {}, U = function(t) {
+var U = {}, q = function(t) {
   return typeof t == "object" ? t !== null : typeof t == "function";
-}, Te = U, z = function(t) {
-  if (!Te(t))
+}, De = q, z = function(t) {
+  if (!De(t))
     throw TypeError(t + " is not an object!");
   return t;
 }, k = function(t) {
@@ -642,114 +643,118 @@ var H = {}, U = function(t) {
   } catch {
     return !0;
   }
-}, T = !k(function() {
-  return Object.defineProperty({}, "a", { get: function() {
-    return 7;
-  } }).a != 7;
-}), v = {}, Ve = {
+}, C, J;
+function T() {
+  return J || (J = 1, C = !k(function() {
+    return Object.defineProperty({}, "a", { get: function() {
+      return 7;
+    } }).a != 7;
+  })), C;
+}
+var v = {}, Ce = {
   get exports() {
     return v;
   },
   set exports(t) {
     v = t;
   }
-}, De = Ve.exports = typeof window < "u" && window.Math == Math ? window : typeof self < "u" && self.Math == Math ? self : Function("return this")();
-typeof __g == "number" && (__g = De);
-var C, Z;
-function Ce() {
-  if (Z)
-    return C;
-  Z = 1;
-  var t = U, e = v.document, i = t(e) && t(e.createElement);
-  return C = function(n) {
+}, Pe = Ce.exports = typeof window < "u" && window.Math == Math ? window : typeof self < "u" && self.Math == Math ? self : Function("return this")();
+typeof __g == "number" && (__g = Pe);
+var P, Q;
+function $e() {
+  if (Q)
+    return P;
+  Q = 1;
+  var t = q, e = v.document, i = t(e) && t(e.createElement);
+  return P = function(n) {
     return i ? e.createElement(n) : {};
-  }, C;
+  }, P;
 }
-var Pe = !T && !k(function() {
-  return Object.defineProperty(Ce()("div"), "a", { get: function() {
+var Be = !T() && !k(function() {
+  return Object.defineProperty($e()("div"), "a", { get: function() {
     return 7;
   } }).a != 7;
-}), _ = U, $e = function(t, e) {
+}), _ = q, Ae = function(t, e) {
   if (!_(t))
     return t;
   var i, n;
   if (e && typeof (i = t.toString) == "function" && !_(n = i.call(t)) || typeof (i = t.valueOf) == "function" && !_(n = i.call(t)) || !e && typeof (i = t.toString) == "function" && !_(n = i.call(t)))
     return n;
   throw TypeError("Can't convert object to primitive value");
-}, J = z, Be = Pe, Ae = $e, Re = Object.defineProperty;
-H.f = T ? Object.defineProperty : function(e, i, n) {
-  if (J(e), i = Ae(i, !0), J(n), Be)
+}, Y = z, Re = Be, je = Ae, Ne = Object.defineProperty;
+U.f = T() ? Object.defineProperty : function(e, i, n) {
+  if (Y(e), i = je(i, !0), Y(n), Re)
     try {
-      return Re(e, i, n);
+      return Ne(e, i, n);
     } catch {
     }
   if ("get" in n || "set" in n)
     throw TypeError("Accessors not supported!");
   return "value" in n && (e[i] = n.value), e;
 };
-var je = H.f, Q = Function.prototype, Ne = /^\s*function ([^ (]*)/, Y = "name";
-Y in Q || T && je(Q, Y, {
+var Ie = U.f, ee = Function.prototype, Fe = /^\s*function ([^ (]*)/, te = "name";
+te in ee || T() && Ie(ee, te, {
   configurable: !0,
   get: function() {
     try {
-      return ("" + this).match(Ne)[1];
+      return ("" + this).match(Fe)[1];
     } catch {
       return "";
     }
   }
 });
-var Ie = Object.is || function(e, i) {
+var Ge = Object.is || function(e, i) {
   return e === i ? e !== 0 || 1 / e === 1 / i : e != e && i != i;
-}, Fe = {}.toString, fe = function(t) {
-  return Fe.call(t).slice(8, -1);
-}, O = {}, Ge = {
+}, Me = {}.toString, de = function(t) {
+  return Me.call(t).slice(8, -1);
+}, O = {}, He = {
   get exports() {
     return O;
   },
   set exports(t) {
     O = t;
   }
-}, w = {}, Me = {
+}, w = {}, Ue = {
   get exports() {
     return w;
   },
   set exports(t) {
     w = t;
   }
-}, b = {}, He = {
+}, b = {}, qe = {
   get exports() {
     return b;
   },
   set exports(t) {
     b = t;
   }
-}, Ue = He.exports = { version: "2.6.12" };
-typeof __e == "number" && (__e = Ue);
-var ze = b, ee = v, te = "__core-js_shared__", ie = ee[te] || (ee[te] = {});
-(Me.exports = function(t, e) {
-  return ie[t] || (ie[t] = e !== void 0 ? e : {});
+}, ze = qe.exports = { version: "2.6.12" };
+typeof __e == "number" && (__e = ze);
+var We = b, ie = v, re = "__core-js_shared__", ne = ie[re] || (ie[re] = {});
+(Ue.exports = function(t, e) {
+  return ne[t] || (ne[t] = e !== void 0 ? e : {});
 })("versions", []).push({
-  version: ze.version,
+  version: We.version,
   mode: "global",
   copyright: "© 2020 Denis Pushkarev (zloirock.ru)"
 });
-var qe = 0, We = Math.random(), pe = function(t) {
-  return "Symbol(".concat(t === void 0 ? "" : t, ")_", (++qe + We).toString(36));
-}, R = w("wks"), Xe = pe, j = v.Symbol, re = typeof j == "function", Ke = Ge.exports = function(t) {
-  return R[t] || (R[t] = re && j[t] || (re ? j : Xe)("Symbol." + t));
+var Xe = 0, Ke = Math.random(), ge = function(t) {
+  return "Symbol(".concat(t === void 0 ? "" : t, ")_", (++Xe + Ke).toString(36));
+}, j = w("wks"), Ze = ge, N = v.Symbol, se = typeof N == "function", Je = He.exports = function(t) {
+  return j[t] || (j[t] = se && N[t] || (se ? N : Ze)("Symbol." + t));
 };
-Ke.store = R;
-var N = fe, Ze = O("toStringTag"), Je = N(function() {
+Je.store = j;
+var I = de, Qe = O("toStringTag"), Ye = I(function() {
   return arguments;
-}()) == "Arguments", Qe = function(t, e) {
+}()) == "Arguments", et = function(t, e) {
   try {
     return t[e];
   } catch {
   }
-}, Ye = function(t) {
+}, tt = function(t) {
   var e, i, n;
-  return t === void 0 ? "Undefined" : t === null ? "Null" : typeof (i = Qe(e = Object(t), Ze)) == "string" ? i : Je ? N(e) : (n = N(e)) == "Object" && typeof e.callee == "function" ? "Arguments" : n;
-}, et = Ye, tt = RegExp.prototype.exec, it = function(t, e) {
+  return t === void 0 ? "Undefined" : t === null ? "Null" : typeof (i = et(e = Object(t), Qe)) == "string" ? i : Ye ? I(e) : (n = I(e)) == "Object" && typeof e.callee == "function" ? "Arguments" : n;
+}, it = tt, rt = RegExp.prototype.exec, nt = function(t, e) {
   var i = t.exec;
   if (typeof i == "function") {
     var n = i.call(t, e);
@@ -757,59 +762,59 @@ var N = fe, Ze = O("toStringTag"), Je = N(function() {
       throw new TypeError("RegExp exec method returned something other than an Object or null");
     return n;
   }
-  if (et(t) !== "RegExp")
+  if (it(t) !== "RegExp")
     throw new TypeError("RegExp#exec called on incompatible receiver");
-  return tt.call(t, e);
-}, rt = z, nt = function() {
-  var t = rt(this), e = "";
+  return rt.call(t, e);
+}, st = z, at = function() {
+  var t = st(this), e = "";
   return t.global && (e += "g"), t.ignoreCase && (e += "i"), t.multiline && (e += "m"), t.unicode && (e += "u"), t.sticky && (e += "y"), e;
-}, st = nt, S = RegExp.prototype.exec, at = String.prototype.replace, de = S, E = "lastIndex", I = function() {
+}, lt = at, S = RegExp.prototype.exec, ot = String.prototype.replace, ve = S, E = "lastIndex", F = function() {
   var t = /a/, e = /b*/g;
   return S.call(t, "a"), S.call(e, "a"), t[E] !== 0 || e[E] !== 0;
-}(), F = /()??/.exec("")[1] !== void 0, lt = I || F;
-lt && (de = function(e) {
+}(), G = /()??/.exec("")[1] !== void 0, ut = F || G;
+ut && (ve = function(e) {
   var i = this, n, r, s, a;
-  return F && (r = new RegExp("^" + i.source + "$(?!\\s)", st.call(i))), I && (n = i[E]), s = S.call(i, e), I && s && (i[E] = i.global ? s.index + s[0].length : n), F && s && s.length > 1 && at.call(s[0], r, function() {
+  return G && (r = new RegExp("^" + i.source + "$(?!\\s)", lt.call(i))), F && (n = i[E]), s = S.call(i, e), F && s && (i[E] = i.global ? s.index + s[0].length : n), G && s && s.length > 1 && ot.call(s[0], r, function() {
     for (a = 1; a < arguments.length - 2; a++)
       arguments[a] === void 0 && (s[a] = void 0);
   }), s;
 });
-var ge = de, ot = function(t, e) {
+var me = ve, ct = function(t, e) {
   return {
     enumerable: !(t & 1),
     configurable: !(t & 2),
     writable: !(t & 4),
     value: e
   };
-}, ut = H, ct = ot, q = T ? function(t, e, i) {
-  return ut.f(t, e, ct(1, i));
+}, ht = U, ft = ct, W = T() ? function(t, e, i) {
+  return ht.f(t, e, ft(1, i));
 } : function(t, e, i) {
   return t[e] = i, t;
-}, L = {}, ht = {
+}, L = {}, pt = {
   get exports() {
     return L;
   },
   set exports(t) {
     L = t;
   }
-}, ft = {}.hasOwnProperty, pt = function(t, e) {
-  return ft.call(t, e);
-}, dt = w("native-function-to-string", Function.toString), gt = v, y = q, ne = pt, P = pe("src"), W = dt, ve = "toString", vt = ("" + W).split(ve);
+}, dt = {}.hasOwnProperty, gt = function(t, e) {
+  return dt.call(t, e);
+}, vt = w("native-function-to-string", Function.toString), mt = v, y = W, ae = gt, $ = ge("src"), X = vt, be = "toString", bt = ("" + X).split(be);
 b.inspectSource = function(t) {
-  return W.call(t);
+  return X.call(t);
 };
-(ht.exports = function(t, e, i, n) {
+(pt.exports = function(t, e, i, n) {
   var r = typeof i == "function";
-  r && (ne(i, "name") || y(i, "name", e)), t[e] !== i && (r && (ne(i, P) || y(i, P, t[e] ? "" + t[e] : vt.join(String(e)))), t === gt ? t[e] = i : n ? t[e] ? t[e] = i : y(t, e, i) : (delete t[e], y(t, e, i)));
-})(Function.prototype, ve, function() {
-  return typeof this == "function" && this[P] || W.call(this);
+  r && (ae(i, "name") || y(i, "name", e)), t[e] !== i && (r && (ae(i, $) || y(i, $, t[e] ? "" + t[e] : bt.join(String(e)))), t === mt ? t[e] = i : n ? t[e] ? t[e] = i : y(t, e, i) : (delete t[e], y(t, e, i)));
+})(Function.prototype, be, function() {
+  return typeof this == "function" && this[$] || X.call(this);
 });
-var mt = function(t) {
+var _t = function(t) {
   if (typeof t != "function")
     throw TypeError(t + " is not a function!");
   return t;
-}, bt = mt, _t = function(t, e, i) {
-  if (bt(t), e === void 0)
+}, yt = _t, xt = function(t, e, i) {
+  if (yt(t), e === void 0)
     return t;
   switch (i) {
     case 1:
@@ -828,11 +833,11 @@ var mt = function(t) {
   return function() {
     return t.apply(e, arguments);
   };
-}, m = v, x = b, yt = q, xt = L, se = _t, $ = "prototype", p = function(t, e, i) {
-  var n = t & p.F, r = t & p.G, s = t & p.S, a = t & p.P, l = t & p.B, o = r ? m : s ? m[e] || (m[e] = {}) : (m[e] || {})[$], c = r ? x : x[e] || (x[e] = {}), f = c[$] || (c[$] = {}), u, h, d, g;
+}, m = v, x = b, Ot = W, wt = L, le = xt, B = "prototype", p = function(t, e, i) {
+  var n = t & p.F, r = t & p.G, s = t & p.S, a = t & p.P, l = t & p.B, o = r ? m : s ? m[e] || (m[e] = {}) : (m[e] || {})[B], c = r ? x : x[e] || (x[e] = {}), f = c[B] || (c[B] = {}), u, h, d, g;
   r && (i = e);
   for (u in i)
-    h = !n && o && o[u] !== void 0, d = (h ? o : i)[u], g = l && h ? se(d, m) : a && typeof d == "function" ? se(Function.call, d) : d, o && xt(o, u, d, t & p.U), c[u] != d && yt(c, u, g), a && f[u] != d && (f[u] = d);
+    h = !n && o && o[u] !== void 0, d = (h ? o : i)[u], g = l && h ? le(d, m) : a && typeof d == "function" ? le(Function.call, d) : d, o && wt(o, u, d, t & p.U), c[u] != d && Ot(c, u, g), a && f[u] != d && (f[u] = d);
 };
 m.core = x;
 p.F = 1;
@@ -843,55 +848,55 @@ p.B = 16;
 p.W = 32;
 p.U = 64;
 p.R = 128;
-var me = p, ae = ge;
-me({
+var _e = p, oe = me;
+_e({
   target: "RegExp",
   proto: !0,
-  forced: ae !== /./.exec
+  forced: oe !== /./.exec
 }, {
-  exec: ae
+  exec: oe
 });
-var be = function(t) {
+var ye = function(t) {
   if (t == null)
     throw TypeError("Can't call method on  " + t);
   return t;
-}, Ot = L, wt = q, G = k, St = be, _e = O, Et = ge, Lt = _e("species"), kt = !G(function() {
+}, St = L, Et = W, M = k, Lt = ye, xe = O, kt = me, Tt = xe("species"), Vt = !M(function() {
   var t = /./;
   return t.exec = function() {
     var e = [];
     return e.groups = { a: "7" }, e;
   }, "".replace(t, "$<a>") !== "7";
-}), Tt = function() {
+}), Dt = function() {
   var t = /(?:)/, e = t.exec;
   t.exec = function() {
     return e.apply(this, arguments);
   };
   var i = "ab".split(t);
   return i.length === 2 && i[0] === "a" && i[1] === "b";
-}(), Vt = function(t, e, i) {
-  var n = _e(t), r = !G(function() {
+}(), Ct = function(t, e, i) {
+  var n = xe(t), r = !M(function() {
     var f = {};
     return f[n] = function() {
       return 7;
     }, ""[t](f) != 7;
-  }), s = r ? !G(function() {
+  }), s = r ? !M(function() {
     var f = !1, u = /a/;
     return u.exec = function() {
       return f = !0, null;
-    }, t === "split" && (u.constructor = {}, u.constructor[Lt] = function() {
+    }, t === "split" && (u.constructor = {}, u.constructor[Tt] = function() {
       return u;
     }), u[n](""), !f;
   }) : void 0;
-  if (!r || !s || t === "replace" && !kt || t === "split" && !Tt) {
+  if (!r || !s || t === "replace" && !Vt || t === "split" && !Dt) {
     var a = /./[n], l = i(
-      St,
+      Lt,
       n,
       ""[t],
-      function(u, h, d, g, xe) {
-        return h.exec === Et ? r && !xe ? { done: !0, value: a.call(h, d, g) } : { done: !0, value: u.call(d, h, g) } : { done: !1 };
+      function(u, h, d, g, we) {
+        return h.exec === kt ? r && !we ? { done: !0, value: a.call(h, d, g) } : { done: !0, value: u.call(d, h, g) } : { done: !1 };
       }
     ), o = l[0], c = l[1];
-    Ot(String.prototype, t, o), wt(
+    St(String.prototype, t, o), Et(
       RegExp.prototype,
       n,
       e == 2 ? function(f, u) {
@@ -901,8 +906,8 @@ var be = function(t) {
       }
     );
   }
-}, Dt = z, le = Ie, Ct = it;
-Vt("search", 1, function(t, e, i, n) {
+}, Pt = z, ue = Ge, $t = nt;
+Ct("search", 1, function(t, e, i, n) {
   return [
     // `String.prototype.search` method
     // https://tc39.github.io/ecma262/#sec-string.prototype.search
@@ -916,26 +921,26 @@ Vt("search", 1, function(t, e, i, n) {
       var s = n(i, r, this);
       if (s.done)
         return s.value;
-      var a = Dt(r), l = String(this), o = a.lastIndex;
-      le(o, 0) || (a.lastIndex = 0);
-      var c = Ct(a, l);
-      return le(a.lastIndex, o) || (a.lastIndex = o), c === null ? -1 : c.index;
+      var a = Pt(r), l = String(this), o = a.lastIndex;
+      ue(o, 0) || (a.lastIndex = 0);
+      var c = $t(a, l);
+      return ue(a.lastIndex, o) || (a.lastIndex = o), c === null ? -1 : c.index;
     }
   ];
 });
-var Pt = fe, $t = Object("z").propertyIsEnumerable(0) ? Object : function(t) {
-  return Pt(t) == "String" ? t.split("") : Object(t);
-}, Bt = $t, At = be, Rt = function(t) {
-  return Bt(At(t));
-}, jt = Math.ceil, Nt = Math.floor, ye = function(t) {
-  return isNaN(t = +t) ? 0 : (t > 0 ? Nt : jt)(t);
-}, It = ye, Ft = Math.min, Gt = function(t) {
-  return t > 0 ? Ft(It(t), 9007199254740991) : 0;
-}, Mt = ye, Ht = Math.max, Ut = Math.min, zt = function(t, e) {
-  return t = Mt(t), t < 0 ? Ht(t + e, 0) : Ut(t, e);
-}, qt = Rt, Wt = Gt, Xt = zt, Kt = function(t) {
+var Bt = de, At = Object("z").propertyIsEnumerable(0) ? Object : function(t) {
+  return Bt(t) == "String" ? t.split("") : Object(t);
+}, Rt = At, jt = ye, Nt = function(t) {
+  return Rt(jt(t));
+}, It = Math.ceil, Ft = Math.floor, Oe = function(t) {
+  return isNaN(t = +t) ? 0 : (t > 0 ? Ft : It)(t);
+}, Gt = Oe, Mt = Math.min, Ht = function(t) {
+  return t > 0 ? Mt(Gt(t), 9007199254740991) : 0;
+}, Ut = Oe, qt = Math.max, zt = Math.min, Wt = function(t, e) {
+  return t = Ut(t), t < 0 ? qt(t + e, 0) : zt(t, e);
+}, Xt = Nt, Kt = Ht, Zt = Wt, Jt = function(t) {
   return function(e, i, n) {
-    var r = qt(e), s = Wt(r.length), a = Xt(n, s), l;
+    var r = Xt(e), s = Kt(r.length), a = Zt(n, s), l;
     if (t && i != i) {
       for (; s > a; )
         if (l = r[a++], l != l)
@@ -946,27 +951,27 @@ var Pt = fe, $t = Object("z").propertyIsEnumerable(0) ? Object : function(t) {
           return t || a || 0;
     return !t && -1;
   };
-}, B, oe;
-function Zt() {
-  if (oe)
-    return B;
-  oe = 1;
+}, A, ce;
+function Qt() {
+  if (ce)
+    return A;
+  ce = 1;
   var t = k;
-  return B = function(e, i) {
+  return A = function(e, i) {
     return !!e && t(function() {
       i ? e.call(null, function() {
       }, 1) : e.call(null);
     });
-  }, B;
+  }, A;
 }
-var A = me, Jt = Kt(!1), M = [].indexOf, ue = !!M && 1 / [1].indexOf(1, -0) < 0;
-A(A.P + A.F * (ue || !Zt()(M)), "Array", {
+var R = _e, Yt = Jt(!1), H = [].indexOf, he = !!H && 1 / [1].indexOf(1, -0) < 0;
+R(R.P + R.F * (he || !Qt()(H)), "Array", {
   // 22.1.3.11 / 15.4.4.14 Array.prototype.indexOf(searchElement [, fromIndex])
   indexOf: function(e) {
-    return ue ? M.apply(this, arguments) || 0 : Jt(this, e, arguments[1]);
+    return he ? H.apply(this, arguments) || 0 : Yt(this, e, arguments[1]);
   }
 });
-var Qt = function() {
+var ei = function() {
   var e = this, i = e.$createElement, n = e._self._c || i;
   return n("div", {
     staticClass: "multiselect",
@@ -1263,8 +1268,8 @@ var Qt = function() {
   }, [e._t("noOptions", function() {
     return [e._v("List is empty.")];
   })], 2)]), e._t("afterList")], 2)])])], 2);
-}, Yt = [];
-function ei(t, e, i, n, r, s, a, l) {
+}, ti = [];
+function ii(t, e, i, n, r, s, a, l) {
   var o = typeof t == "function" ? t.options : t;
   e && (o.render = e, o.staticRenderFns = i, o._compiled = !0), n && (o.functional = !0), s && (o._scopeId = "data-v-" + s);
   var c;
@@ -1293,9 +1298,9 @@ function ei(t, e, i, n, r, s, a, l) {
     options: o
   };
 }
-const ti = {
+const ri = {
   name: "vue-multiselect",
-  mixins: [Le, ke],
+  mixins: [Te, Ve],
   props: {
     /**
      * name attribute to match optional label element
@@ -1475,27 +1480,27 @@ const ti = {
       return this.searchable && (this.hasSingleSelectedSlot && (this.visibleSingleValue || this.visibleSingleValue === 0) ? this.isOpen : !0);
     }
   }
-}, ce = {};
-var ii = /* @__PURE__ */ ei(
-  ti,
-  Qt,
-  Yt,
-  !1,
+}, fe = {};
+var ni = /* @__PURE__ */ ii(
   ri,
+  ei,
+  ti,
+  !1,
+  si,
   null,
   null,
   null
 );
-function ri(t) {
-  for (let e in ce)
-    this[e] = ce[e];
+function si(t) {
+  for (let e in fe)
+    this[e] = fe[e];
 }
-const ni = /* @__PURE__ */ function() {
-  return ii.exports;
+const ai = /* @__PURE__ */ function() {
+  return ni.exports;
 }();
 export {
-  ni as Multiselect,
-  ni as default,
-  Le as multiselectMixin,
-  ke as pointerMixin
+  ai as Multiselect,
+  ai as default,
+  Te as multiselectMixin,
+  Ve as pointerMixin
 };
