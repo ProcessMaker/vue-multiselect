@@ -77,7 +77,6 @@
     "shelljs": "^0.8.3",
     "url-loader": "^0.5.7",
     "vite": "^4.0.4",
-    "vite-plugin-css-injected-by-js": "^2.4.0",
     "vite-plugin-vue2": "^2.0.3",
     "vue": "^2.5.15",
     "vue-hot-reload-api": "^1.2.0",
@@ -113,7 +112,7 @@
         "require": "./dist/vue-multiselect.umd.js"
       }
     },
-    "./dist/style.css": "./dist/style.css"
+    "./dist/vue-multiselect.css": "./dist/vue-multiselect.css"
   },
   "engines": {
     "node": ">= 4.0.0",

@@ -1,6 +1,5 @@
 import { defineConfig } from "vite";
 import { createVuePlugin } from "vite-plugin-vue2";
-import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 import {resolve} from "path";
 
 
@@ -8,7 +7,7 @@ const libraryName = "VueMultiselect";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [createVuePlugin(), cssInjectedByJsPlugin()],
+  plugins: [createVuePlugin()],
   resolve: {
     alias: [
       {
@@ -31,6 +30,7 @@ export default defineConfig({
       external: ["vue", "moment"],
       output: {
         exports: "named",
+        assetFileNames: `vue-multiselect.[ext]`,
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {
