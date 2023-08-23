@@ -2,6 +2,7 @@
   "name": "@processmaker/vue-multiselect",
   "version": "2.2.0",
   "private": false,
+  "type": "module",
   "types": "index.d.ts",
   "scripts": {
     "test": "vue-cli-service test:unit",
@@ -112,7 +113,10 @@
         "require": "./dist/vue-multiselect.umd.js"
       }
     },
-    "./dist/vue-multiselect.css": "./dist/vue-multiselect.css"
+    "./dist/vue-multiselect.css": {
+      "import": "./dist/vue-multiselect.css",
+      "require": "./dist/vue-multiselect.css"
+    }
   },
   "engines": {
     "node": ">= 4.0.0",
