@@ -30,7 +30,7 @@ export default defineConfig({
       external: ["vue", "moment"],
       output: {
         exports: "named",
-        assetFileNames: `vue-multiselect.[ext]`,
+        assetFileNames: `vue-multiselect.min.[ext]`,
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {

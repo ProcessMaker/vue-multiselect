@@ -108,14 +108,12 @@
   "module": "./dist/vue-multiselect.es.js",
   "exports": {
     ".": {
-      "import": {
-        "import": "./dist/vue-multiselect.es.js",
-        "require": "./dist/vue-multiselect.umd.js"
-      }
+      "import": "./dist/vue-multiselect.es.js",
+      "require": "./dist/vue-multiselect.umd.js"
     },
-    "./dist/vue-multiselect.css": {
-      "import": "./dist/vue-multiselect.css",
-      "require": "./dist/vue-multiselect.css"
+    "./dist/vue-multiselect.min.css": {
+      "import": "./dist/vue-multiselect.min.css",
+      "require": "./dist/vue-multiselect.min.css"
     }
   },
   "engines": {
