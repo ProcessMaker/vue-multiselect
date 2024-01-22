@@ -17,9 +17,7 @@
     "finish": "npm run lint && npm test && npm run bundle"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.4",
-    "@vue/cli-plugin-unit-jest": "^3.0.4",
-    "@vue/cli-service": "^3.0.4",
+    "@vitejs/plugin-vue2": "^2.3.1",
     "@vue/test-utils": "^1.0.0-beta.25",
     "autoprefixer": "^9.6.1",
     "babel-cli": "^6.26.0",
@@ -78,7 +76,6 @@
     "shelljs": "^0.8.3",
     "url-loader": "^0.5.7",
     "vite": "^4.0.4",
-    "vite-plugin-vue2": "^2.0.3",
     "vue": "^2.5.15",
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.0.0",
