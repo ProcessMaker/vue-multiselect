@@ -135,5 +135,9 @@
     "dist/*",
     "src/*",
     "index.d.ts"
-  ]
+  ],
+  "processmaker": {
+    "downstream": ["vue-form-elements"],
+    "command": "build"
+  }
 }
