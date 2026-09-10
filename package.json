@@ -9,6 +9,7 @@
     "lint": "eslint --ext .js,.vue src tests/unit",
     "dev": "vite",
     "build": "vite build",
+    "build-bundle": "npm run build",
     "preview": "vite preview",
     "bundle:dist": "rm -rf dist && webpack --config build/webpack.bundle.conf.js",
     "bundle": "node build/bundle.js",
@@ -137,7 +138,6 @@
     "index.d.ts"
   ],
   "processmaker": {
-    "downstream": ["vue-form-elements"],
-    "command": "build"
+    "downstream": ["vue-form-elements"]
   }
 }
