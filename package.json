@@ -1,6 +1,6 @@
 {
   "name": "@processmaker/vue-multiselect",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "private": false,
   "type": "module",
   "types": "index.d.ts",
@@ -137,7 +137,9 @@
     "index.d.ts"
   ],
   "processmaker": {
-    "downstream": ["vue-form-elements"],
+    "downstream": [
+      "vue-form-elements"
+    ],
     "build": "yarn build"
   }
 }
